@@ -1,0 +1,127 @@
+.home {
+    &-cover {
+        &__header {
+            background-repeat: no-repeat;
+            background-image: url("../img/bg-header.svg");
+            background-position: 100% 100%;
+            background-size: 50%;
+        }
+        &__feature {
+            background-repeat: no-repeat;
+            background-image: url("../img/dotted-line.svg"), url("../img/bg-feature.svg");
+            background-position: 40% 35%, 0%;
+            background-size: 40%, 50%;
+        }
+        &__join {
+            background-repeat: no-repeat;
+            background-image: url("../img/bg-join-beta.svg");
+            background-position: 0% 40px;
+            background-size: cover;
+        }
+    }
+
+    &-feature {
+        &__img {
+            max-height: 180px;
+            &-track {
+                max-height: 160px;
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .min-vh-75 {
+        min-height: unset !important;
+    }
+    .home {
+        &-cover {
+            &__header {
+                background-position: 120px -30%;
+                background-size: contain;
+            }
+            &__feature {
+                background-image: url("../img/bg-feature.svg");
+                background-position: 0% 10%;
+                background-size: 90%;
+            }
+            &__join {
+                background-repeat: no-repeat;
+                background-image: url("../img/bg-join-beta.svg");
+                background-position: 100% 100px;
+                background-size: cover;
+            }
+        }
+
+        &-feature {
+            &__img {
+                max-height: unset;
+                width: 50%;
+                &-track {
+                    max-height: 160px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .min-vh-75 {
+        min-height: unset !important;
+    }
+    .home {
+        &-feature {
+            &__img {
+                width: 50%;
+                &-track {
+                    max-height: 120px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .min-vh-75 {
+        min-height: unset !important;
+    }
+    .home {
+        &-cover {
+            &__header {
+                background-position: 120px -30%;
+                background-size: contain;
+            }
+            &__feature {
+                background-image: url("../img/bg-feature.svg");
+                background-position: 0%;
+                background-size: 50%;
+            }
+            &__join {
+                background-repeat: no-repeat;
+                background-image: url("../img/bg-join-beta.svg");
+                background-position: 100% 100px;
+                background-size: cover;
+            }
+        }
+
+        &-feature {
+            &__img {
+                max-height: unset;
+                &-track {
+                    max-height: 160px;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

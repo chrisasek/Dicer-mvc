@@ -1,0 +1,16 @@
+@use "sass:map";
+body{
+  font-size: 14px;
+}
+a {
+  color: map-get($map: $colors, $key: 'accent');
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: map-get($map: $colors, $key: 'accent');
+    // .card {
+    //   background-color: var(--color-red) !important;
+    // }
+  }
+}

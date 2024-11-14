@@ -1,0 +1,76 @@
+@use "sass:map";
+
+.sidebar {
+  .sidebar-content {
+    .nav-item {
+      background: none !important;
+      color: map.get($colors, black) !important;
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+
+      // ACTIVE
+      &.active,
+      &:hover {
+        .nav-link {
+          font-weight: bold;
+          border-radius: 5px;
+          background-color: map.get($colors, accent) !important;
+          color: map.get($colors, accent-100) !important;
+
+          // img {
+          //   filter: contrast(1);
+          // }
+
+        }
+      }
+
+      // TITLE
+      &.title {
+        font-weight: 500;
+        font-size: 13px;
+
+        &:hover {
+          background: none !important;
+        }
+      }
+
+      // NAVLINK
+      .nav-link {
+        color: map.get($colors, black) !important;
+        font-size: 13px;
+
+        // img {
+        //   filter: contrast(0);
+        // }
+      }
+    }
+  }
+}
+
+.sidebar.navbar-expand-xl .sidebar-content .navbar-nav .nav-link:focus {
+  color: map-get($map: $colors, $key: accent-100) !important;
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1400px) {
+  .ot-nav {
+    .navbar {
+      .offcanvas.show {
+        width: 425px;
+      }
+    }
+  }
+}
+
+// Large Screen: small desktop
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+  #sidebarMenu {
+    .nav-link img {
+      height: 13px;
+    }
+  }
+
+  .dashboard.sidebar .collapse .nav-link {
+    padding-left: 38px !important;
+  }
+}

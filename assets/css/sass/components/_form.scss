@@ -1,0 +1,78 @@
+@use "sass:map";
+
+.form-label,
+.form-floating>label {
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  font-size: map-get($map: $text-sizes, $key: md);
+  border-radius: map-get($map: $border-radius, $key: 5);
+
+  &::placeholder,
+  .form-label {
+    font-size: map-get($map: $text-sizes, $key: sm);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--color-red-lighter), 0.25);
+  }
+}
+
+select.placeholder-shown {
+  font-size: 13px;
+  padding: 1rem 1.5rem;
+  // padding-left: 3rem !important;
+}
+
+select.placeholder-hidden {
+  padding: 0.8rem 1.5rem;
+  font-size: 14px;
+  // padding-left: 3rem !important;
+  color: black;
+}
+
+.select2-container--default .select2-selection--single {
+  height: inherit;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+
+  font-size: 13.5px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+  top: 10px
+}
+
+.form-icon {
+  height: 16px;
+  width: 16px;
+  top: 26px !important;
+  left: 29px !important
+}
+
+input:checked {
+  background-color: var(--color-green) !important;
+  border-color: var(--color-green) !important;
+}
+
+textarea.form-control {
+  border-radius: var(--radius-12);
+}
+
+label {
+  &.error {
+    font-size: map-get($map: $text-sizes, $key: sm);
+    font-weight: 500;
+    margin-top: 10px;
+  }
+}
+
+.ff_fileupload_wrap .ff_fileupload_dropzone {
+  height: 101px;
+  background-size: 65px !important;
+}

@@ -1,0 +1,11 @@
+.lastest-listing {
+    &-img {
+        height: 240px;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    &-state {
+        line-height: normal;
+    }
+}

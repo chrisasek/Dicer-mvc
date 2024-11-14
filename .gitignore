@@ -1,0 +1,8 @@
+/config/*
+/vendor/*
+/assets/images/profile/*
+/assets/images/report/*
+/UI/*
+.htaccess
+*.lock
+composer.lock

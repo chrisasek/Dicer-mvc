@@ -1,0 +1,29 @@
+@use "sass:map";
+
+// Colors
+:root {
+  --color-blue: #0077ed;
+
+  --color-red: #f32728;
+  --color-red-700: #e20001;
+  --color-red-200: #ffeded;
+
+  --color-green: #069141;
+  --color-yellow: #e5b000;
+
+  --color-gray: #c3c3c3;
+  --color-gray-600: #8c84a3;
+  --color-gray-200: #f9f9f9;
+
+
+//   --form-radius: 6px;
+//   --radius-default: 50px;
+//   --radius-sm: 22px;
+//   --radius-12: 12px;
+
+//   --text-sm: 10.5px;
+//   --text-md: 13.5px;
+//   --text-lg: 15.5px;
+}
+
+$font-family: "Roboto", sans-serif;

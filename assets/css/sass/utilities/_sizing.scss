@@ -1,0 +1,64 @@
+@use "sass:map";
+
+@each $name, $size in $sizes {
+
+    // Width
+    .w-#{$name} {
+        width: $size !important;
+    }
+
+    // Height
+    .h-#{$name} {
+        height: $size !important;
+    }
+
+    // Margin
+    .m {
+        &-#{$name} {
+            margin: $size !important;
+        }
+
+        &-n#{$name} {
+            margin: -$size !important;
+        }
+
+        &t-n#{$name} {
+            margin-top: -$size !important;
+        }
+
+        &s-n#{$name} {
+            margin-left: -$size !important;
+        }
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    @each $name, $size in $sizes {
+        .w-lg-#{$name} {
+            width: $size !important;
+        }
+
+        .h-lg-#{$name} {
+            height: $size !important;
+        }
+
+        .m {
+            &-lg-#{$name} {
+                margin: $size !important;
+            }
+
+            &-lg-n#{$name} {
+                margin: -$size !important;
+            }
+
+            &t-lg-n#{$name} {
+                margin-top: -$size !important;
+            }
+
+            &s-lg-n#{$name} {
+                margin-left: -$size !important;
+            }
+        }
+    }
+}

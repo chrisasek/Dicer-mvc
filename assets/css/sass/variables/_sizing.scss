@@ -1,0 +1,49 @@
+@use "sass:map";
+
+$sizes: (
+    10px: 10px,
+    100px: 100px,
+    130px: 130px,
+
+    20px: 20px,
+    25px: 25px,
+    200px: 200px,
+    230px: 230px,
+
+    30px: 30px,
+    35px: 35px,
+    300px: 300px,
+    330px: 330px,
+
+    40px: 40px,
+    45px: 45px,
+    400px: 400px,
+    430px: 430px,
+
+    50px: 50px,
+    55px: 55px,
+    500px: 500px,
+    530px: 530px,
+
+    60px: 60px,
+    65px: 65px,
+    600px: 600px,
+
+    70px: 70px,
+    75px: 75px,
+    700px: 700px,
+
+    80px: 80px,
+    85px: 85px,
+    800px: 800px,
+);
+
+$border-radius: (
+    5: 5px,
+    10: 10px,
+    12: 12px,
+    
+    default: 50px,
+    sm: 22px,
+    form: 6px,
+);

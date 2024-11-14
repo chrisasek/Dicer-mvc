@@ -1,0 +1,19 @@
+.header-filter a {
+    color: var(--color-600);
+  }
+  
+  .header-filter a span.badge {
+    background-color: var(--color-gray-200);
+    color: var(--color-600);
+  }
+  
+  .header-filter a.active {
+    color: var(--color-red);
+    font-weight: bold;
+  }
+  
+  .header-filter a.active span.badge {
+    background-color: var(--color-red-200);
+    color: var(--color-red);
+    font-weight: bold;
+  }

@@ -1,0 +1,32 @@
+.header-hero {
+    background: url("../img/list-a-room.jpg");
+    background-size: cover;
+    background-position: top center;
+    &__text {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    &__body {
+        min-height: 80vh;
+    }
+}
+
+.list-house {
+    &-note {
+        ul {
+            font-size: 1.35rem;
+            li {
+                margin-bottom: 1.5rem;
+            }
+            li:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-room {
+        &__body {
+            height: 450px;
+        }
+    }
+}

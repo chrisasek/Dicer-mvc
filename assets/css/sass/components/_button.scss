@@ -1,0 +1,116 @@
+@use 'sass:map';
+
+.btn {
+  transition: all ease-in-out;
+  background-color: map-get($map: $colors, $key: accent);
+  border-color: map-get($map: $colors, $key: accent);
+  color: white;
+  font-size: map-get($map: $text-sizes, $key: md);
+  font-weight: bold;
+  border-radius: map-get($map: $border-radius, $key: 5);
+  padding: .8rem 1.6rem;
+
+  &:hover {
+    transition-duration: 1s;
+    background-color: map-get($map: $colors, $key: accent);
+    color: white;
+    font-weight: bold;
+  }
+
+  &-sm {
+    font-size: 12px;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  &-md {
+    font-size: 16px;
+    padding: 1rem 2rem !important;
+  }
+
+  &-lg {
+    font-size: 18px;
+    padding: 1.3rem 2rem !important;
+  }
+
+  &-outline {
+    transition: all;
+    background-color: transparent;
+    color: map-get($map: $colors, $key: accent);
+    border: 1px solid map-get($map: $colors, $key: accent);
+
+    &:hover {
+      background-color: map-get($map: $colors, $key: accent);
+      border-color: map-get($map: $colors, $key: accent);
+      color: var(--color-white) !important;
+    }
+
+    &.no-hover {
+      background-color: transparent !important;
+      color: map-get($map: $colors, $key: accent) !important;
+    }
+
+    &-primary {
+      border-color: map-get($map: $colors, $key: accent);
+      color: map-get($map: $colors, $key: accent) !important;
+    }
+
+    &-neon {
+      border-color: var(--color-neon);
+      color: var(--color-neon) !important;
+    }
+  }
+
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &.bg {
+    &-primary {
+      background-color: map-get($map: $colors, $key: accent) !important;
+      color: var(--color-white) !important;
+      border-color: map-get($map: $colors, $key: accent);
+
+      &-light {
+        background-color: var(--color-red-light) !important;
+        color: var(--color-white) !important;
+        border-color: var(--color-red-light);
+      }
+    }
+
+    &-accent {
+      background-color: map-get($map: $colors, $key: accent) !important;
+      color: var(--color-white) !important;
+    }
+
+    &-dark {
+      background-color: var(--color-dak);
+
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+
+    &-black {
+      background-color: var(--color-black);
+
+      &:hover {
+        background-color: map-get($map: $colors, $key: accent);
+        color: var(--color-black);
+        border: 1px solid rgba(var(--color-black), 0.8);
+      }
+    }
+
+    &-white {
+      background-color: var(--color-white) !important;
+      border-color: var(--color-white) !important;
+      color: map-get($map: $colors, $key: accent) !important;
+
+      &:hover {
+        background-color: map-get($map: $colors, $key: accent);
+        color: var(--color-white) I !important;
+        border: 1px solid rgba(var(--color-red-light), 0.8);
+      }
+    }
+  }
+}

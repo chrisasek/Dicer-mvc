@@ -1,0 +1,119 @@
+@use "sass:map";
+
+.red-border {
+  border-color: darkred;
+}
+
+.input-no-error {
+  border-color: green;
+}
+
+.error {
+  color: red;
+}
+
+hr {
+  color: #000 !important;
+  border-width: 1.2px;
+  opacity: 1;
+}
+
+.border {
+  border-width: 1.2px !important;
+  border-color: map.get($colors, "primary");
+
+  &-start,
+  &-end,
+  &-top,
+  &-bottom {
+    border-width: 1.2px !important;
+    border-color: map.get($colors, "primary");
+    border-color: map.get($colors, "primary");
+  }
+
+  &-white {
+    border-color: map.get($colors, "white");
+  }
+
+  &-primary {
+    border-color: map.get($colors, "primary") !important;
+  }
+
+  &-accent {
+    border-color: map.get($colors, "accent");
+  }
+}
+
+.min {
+  &-vh-100 {
+    min-height: 100vh !important;
+  }
+
+  &-vh-90 {
+    min-height: 90vh !important;
+  }
+
+  &-vh-75 {
+    min-height: 75vh !important;
+  }
+
+  &-vh-50 {
+    min-height: 50vh !important;
+  }
+}
+
+.box {
+  border-radius: 10px;
+  width: 44px !important;
+  height: 41px !important;
+
+  &.check {
+    width: 60px !important;
+    height: 42px !important;
+  }
+}
+
+.text-link {
+  font-size: small;
+  color: var(--color-red);
+  font-weight: bold;
+  transition: all 0.2s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+// ICON
+.icon {
+  height: 16px;
+  width: 16px;
+
+  &-sm {
+    height: 12px;
+    width: 12px;
+  }
+
+  &-md {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.rounded-full {
+  border-radius: var(--radius-default);
+}
+
+/* Reset Summernote Backdrop */
+.note-modal-backdrop {
+  z-index: -1 !important;
+}
+
+.overflow {
+  &-x {
+    &-auto {
+      overflow-x: auto;
+    }
+  }
+}

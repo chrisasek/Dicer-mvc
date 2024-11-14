@@ -1,0 +1,25 @@
+.notification {
+  img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .message {
+    font-size: 14px;
+  }
+  &.alert-danger {
+  }
+
+  &.alert-success {
+  }
+
+  &.alert-warning {
+  }
+}
+@media (max-width: 767.98px) {
+  .notification {
+    border-width: 2px !important;
+    .message {
+      font-size: 11px !important;
+    }
+  }
+}

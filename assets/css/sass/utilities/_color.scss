@@ -1,0 +1,23 @@
+@use "sass:map";
+
+@each $name, $color in $colors {
+    .bg-#{''+$name} {
+        background-color: $color !important;
+    }
+
+    .bg-#{''+$name}-transparent {
+        background-color: rgba($color, 0.9) !important;
+    }
+
+    .text-#{''+$name} {
+        color: $color !important;
+    }
+
+    // Border
+    .border-#{''+$name} {
+        border-color: $color !important;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}

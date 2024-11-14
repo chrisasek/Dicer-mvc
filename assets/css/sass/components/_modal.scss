@@ -1,0 +1,5 @@
+.modal{
+    &.show{
+        background-color: var(--color-black-overlay);
+    }
+}

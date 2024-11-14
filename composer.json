@@ -1,0 +1,28 @@
+{
+    "name": "dicer/app",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "models/",
+            "App\\Classes\\": "app/classes/",
+            "Controllers\\": "app/controllers/",
+            "Models\\": "app/models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dicer"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "spatie/async": "^1.5",
+        "illuminate/database": "^11.9",
+        "izniburak/router": "^3.0",
+        "devanych/view-renderer": "^1.0",
+        "rakit/validation": "^1.4",
+        "egulias/email-validator": "^4.0",
+        "guzzlehttp/guzzle": "^7.9",
+        "php-curl-class/php-curl-class": "^9.19"
+    }
+}

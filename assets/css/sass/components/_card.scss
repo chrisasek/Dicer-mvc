@@ -1,0 +1,44 @@
+@use "sass:map";
+
+.card {
+  border-radius: map-get($map: $border-radius, $key: 5);
+
+  &.bordered {
+    border: 3.5px solid var(--color-red)-lighter;
+
+    &-white {
+      border: 3.5px solid var(--color-white);
+    }
+  }
+
+  &.outlined {
+    outline: 3.5px solid var(--color-red)-lighter;
+    outline-offset: -4px;
+
+    &-white {
+      outline: 3.5px solid var(--color-white);
+    }
+  }
+
+  &.alert {
+    border-width: 3.5px;
+
+    &-success {
+      border-color: var(--color-red)-lighter;
+    }
+
+    &-warning {
+      border-color: var(--color-red);
+    }
+  }
+
+  &-footer {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+
+}
