@@ -3,10 +3,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "": "models/",
-            "App\\Classes\\": "app/classes/",
-            "Controllers\\": "app/controllers/",
-            "Models\\": "app/models/"
+            "App\\": "app/"
         }
     },
     "authors": [

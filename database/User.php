@@ -1,5 +1,5 @@
 <?php
-require "../config/init.php";
+require __DIR__ . '/../bootstrap/app.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 // use Illuminate\Support\Facades\Schema;
